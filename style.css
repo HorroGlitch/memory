@@ -1,3 +1,7 @@
+body{
+  user-select: none;
+}
+
 .playground{
   width: 50vw;
   height: 50vh;
@@ -6,6 +10,7 @@
 }
 
 div {
+  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
