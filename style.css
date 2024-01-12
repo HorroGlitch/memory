@@ -1,0 +1,16 @@
+.playground{
+  width: 50vw;
+  height: 50vh;
+  display: grid;
+  grid-template-columns:repeat(4,25%) ;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid;
+  border-color: red;
+  height: 50px;
+  width: 50px;
+}
