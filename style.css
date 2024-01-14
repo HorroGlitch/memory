@@ -9,7 +9,7 @@ body{
   grid-template-columns:repeat(4,25%) ;
 }
 
-div {
+.cards {
   background-color: black;
   display: flex;
   align-items: center;
