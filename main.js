@@ -6,26 +6,22 @@ let cards = document.querySelectorAll(".cards");
 let user_returned = 0;
 let game_returned = 0;
 
-let randomCardValue;
-
-let randomMemomy = [];
+let random
+let tRandom = [];
 let cardsSave;
 
 let flag = false;
 
 
-function getRandomMemoryValue(cards, randomMemomy) {
-let i = 0
-    while (i < cards[i]) {
-      randomCardValue = cards[Math.floor(Math.random()*cards.length)];
-      console.log(randomCardValue);
-      randomMemomy.push(randomCardValue);
-      cards.slice(randomCardValue);
-
-    }
+function getRandomMemoryValue(cards, tRandom) {
+    // while (0 < cards.length) {
+    // //   random = (cards[Math.floor(Math.random()*cards.length-1)]);
+    // //   tRandom.push(random)
+    // //   cards.slice(random.value);
+    // }
 }
-getRandomMemoryValue(cards, randomMemomy);
-console.log(randomMemomy);
+getRandomMemoryValue(cards, tRandom);
+// console.log(randomMemomy);
 
 
 for (let i = 0; i < cards.length; i++) {
