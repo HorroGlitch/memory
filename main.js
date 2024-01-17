@@ -7,24 +7,26 @@ let user_returned = 0;
 let game_returned = 0;
 
 let random
-let tRandom = [];
 let cardsSave;
 
 let flag = false;
+let result = [];
 
+function shuffleArray(arr) {
+    while (arr.length > 0) {
+        random = Math.floor(Math.random() * arr.length)
+        result.push(arr[random]);
 
-function getRandomMemoryValue(cards, tRandom) {
-    // while (0 < cards.length) {
-    // //   random = (cards[Math.floor(Math.random()*cards.length-1)]);
-    // //   tRandom.push(random)
-    // //   cards.slice(random.value);
-    // }
+        arr = arr.slice(0, random).concat(arr.slice(random+1))
+        
+    }
 }
-getRandomMemoryValue(cards, tRandom);
-// console.log(randomMemomy);
+shuffleArray([1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8]);
+console.log(result);
 
 
 for (let i = 0; i < cards.length; i++) {
+    cards[i].textContent = result[i]
 
     cards[i].addEventListener('click', ()=>{
         if (flag === false) {
